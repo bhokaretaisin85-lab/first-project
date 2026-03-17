@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img{
+            width: 600px;
+            transition: 0.2s;
+        }
+    </style>
+    <script>
+        modifyImage = ()=>{
+            original = "https://m.media-amazon.com/images/I/510HCpo5tZL._AC_UF894,1000_QL80_.jpg"
+            img = document.getElementById("img");
+            src = img.getAttribute("src");
+         if(src == original)
+            img.setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpwGNel5uaZhhn53Neksuq8cveExdvDoEBIA&s");
+        else{
+            img.setAttribute("src",original);
+        }
+        }
+    </script>
+</head>
+<body>
+    <img onclick="modifyImage()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpwGNel5uaZhhn53Neksuq8cveExdvDoEBIA&s" id="img"/>
+</body>
+</html>

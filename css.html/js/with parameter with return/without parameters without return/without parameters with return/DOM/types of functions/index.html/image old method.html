@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img{
+            width: 600px;
+            transition: 0.2s;
+        }
+    </style>
+    <script>
+        modifyImage = ()=>{
+            img = document.getElementById("img");
+            img.src="https://m.media-amazon.com/images/I/510HCpo5tZL._AC_UF894,1000_QL80_.jpg"
+        }
+
+         originalImg = ()=>{
+            img = document.getElementById("img");
+            img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpwGNel5uaZhhn53Neksuq8cveExdvDoEBIA&s"
+        }
+    </script>
+</head>
+<body>
+    <img onmouseover="modifyImage()" onmouseout="originalImg()" src="https://m.media-amazon.com/images/I/510HCpo5tZL._AC_UF894,1000_QL80_.jpg"id="img" />
+</body>
+</html>

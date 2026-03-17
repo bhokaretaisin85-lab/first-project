@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    nav{
+        display: flex;
+        padding: 0 70px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    #navbar{
+        margin-left: auto;
+    }
+    ul button{
+        padding: 7px 14px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: orangered;
+        color: white;
+    }
+    #navbar ul{
+        align-items: center;
+        list-style: none;
+        gap: 50px;
+        display: flex;
+    }
+    #navbar ul li{
+        font-size: 15px;
+        cursor: pointer;
+    }
+    #portfolio{
+        padding: 30px 60px 0 60px;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTszw0f6MUabPEp31T57rwXTnRNwOgsNVU9yw&s);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .man{
+        width: 500px;
+        height: auto;
+    }
+    .heading h5{
+        color: orangered;
+        font-size: 30px;
+    }
+    .heading h1{
+        font-size: 50px;
+        color: blue;
+
+    }
+    .heading button{
+        padding: 10px 30px;
+        width: 150px;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+    .btn1{
+        background-color: orangered;
+        color: white;
+        border: none;
+    }
+    .btn2{
+        background-color: transparent;
+        color: black;
+        border: 1px solid orange;
+    }
+    #footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        position: fixed;
+        bottom: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+<body>
+    <nav>
+        <div>
+            <h3>portfolio</h3>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Portfolio</li>
+                <li>Page</li>
+                <li>Contact</li>
+                <button>Get free consultant</button>
+            </ul>
+        </div>
+    </nav>
+    <section id="portfolio">
+        <div class="heading">
+            <h5>Get every single solution</h5>
+            <h1>I'm Designer<br/>Harris F.watson</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicinf elit.Reprehenderit rerum amet fugit molestine ex officiis</p>
+            <button class="btn1">Learn more</button>
+            <button class="btn2">Hire me</button>
+        </div>
+        <div>
+            <img class="man"src="https://static.vecteezy.com/system/resources/thumbnails/026/136/046/small/business-man-illustration-ai-generative-png.png"/>
+        </div>
+    </section>
+    <footer id="footer">
+        <h4>Designing with passion while exploring thr world</h4>
+        <h3>Ant type of Query and Discussion</h3>
+    </footer>
+</body>
+</html>

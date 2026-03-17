@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    a=parseInt(prompt("Enter first number"));
+    b=parseInt(prompt("Enter second number"));
+    ch=parseInt(prompt("Enter your choice:\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division"));
+    if(ch==1)
+        c=a+b;
+    else if(ch==2)
+        c=a-b;
+    else if(ch==3)
+        c=a*b;
+    else if(ch==4)
+        c=a/b;
+    else{
+        console.log("Invalid choice");
+        c=0;
+    }
+    console.log("Answer is:"+c)
+</script>
+<body>
+    <h1>perform arithmetic operations as per users choice</h1>
+</body>
+</html>

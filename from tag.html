@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title>User Information Form</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #b0c4de;
+        }
+        input[type="text"], textarea, select {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .center-button {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="user_name"></td>
+        </tr>
+        <tr>
+            <td>Sex</td>
+            <td>
+                <input type="radio" name="sex" value="male" id="male"> <label for="male">Male</label><br>
+                <input type="radio" name="sex" value="female" id="female" checked> <label for="female">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Eye color</td>
+            <td>
+                <select name="eye_color">
+                    <option value="green" selected>green</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Check all that apply</td>
+            <td>
+                <input type="checkbox" name="attributes" value="over_6_feet" id="height"> <label for="height">Over 6 feet tall</label><br>
+                <input type="checkbox" name="attributes" value="over_200_pounds" id="weight"> <label for="weight">Over 200 pounds</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Describe your athletic ability:</td>
+            <td><textarea name="athletic_ability" rows="4"></textarea></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2" class="center-button">
+                <input type="submit" value="Enter my information">
+            </td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>
