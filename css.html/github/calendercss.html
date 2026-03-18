@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Coolvetica;
+}
+#top{
+    margin: 0 50px;
+    padding: 10px 0;
+    display: flex;
+}
+#tleft{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#ptop{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#pbottom{
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+#tright{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+#part1{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    gap: 20px;
+    padding: 0;
+}
+.data{
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    padding: 30px;
+
+}
+#left{
+    width: 25%;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding-left: 20px;
+}
+#left h2{
+    font-size: 50px;
+}
+#left table{
+    width: 100%;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.light{
+    color: grey;
+}
+#right{
+    width: 75%;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+#right table{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+#right table th{
+    font-size: 20px;
+    font-weight: thinner;
+    font-style: normal;
+    text-align: left;
+}
+#right table td{
+    text-align: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+#right table td p{
+    font-size: 20px;
+    text-align: left;
+}
+.dull{
+    color: lightgrey;
+}
+.dull p{
+    color: black;
+}
+#current{
+    color: rgb(255, 85, 113);
+}
+
+</style>
+
+<body>
+    <div id="top">
+        <div id="tleft">
+            <div id="ptop">
+        <i class="fa-solid fa-bars"></i>
+        <p>Calendar > May 2017</p>
+        </div>
+        <div id="pbottom">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-brands fa-connectdevelop"></i>
+            <i class="fa-solid fa-arrow-up"></i>
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+        </div>
+        <div id="tright">
+            <div id="part1">
+            <p>Month</p>
+            <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div id="part2">
+                <i class="fa-regular fa-window-minimize"></i>
+                <i class="fa-regular fa-window-maximize"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </div>
+    <div class="data">
+    <div id="left">
+        <div id="day">
+            <h2>Wednesday<br />
+                April 6</h2>
+        </div>
+        <div id="schedule">
+            <table>
+                <tr class="light">
+                    <td>8:30</td>
+                    <td>Team Meeting</td>
+                </tr>
+                <tr class="light">
+                    <td>10:00</td>
+                    <td>Lunch With Sasha</td>
+                </tr>
+                <tr class="dark">
+                    <td>2:30</td>
+                    <td>Design Review</td>
+                </tr>
+                <tr class="dark">
+                    <td>4:00</td>
+                    <td>Get Groceries</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="right">
+        <table>
+            <tr>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+            </tr>
+            <tr>
+                <td class="dull">30<p>2</p>
+                </td>
+                <td class="dull">31<p>4</p>
+                </td>
+                <td>1<p>2</p>
+                </td>
+                <td>2<p>3</p>
+                </td>
+                <td>3<p>1</p>
+                </td>
+                <td>4<p>2</p>
+                </td>
+                <td>5<p>4</p>
+                </td>
+            </tr>
+            <tr>
+                <td>6<p>2</p>
+                </td>
+                <td>7<p>4</p>
+                </td>
+                <td>8<p>2</p>
+                </td>
+                <td>9<p>3</p>
+                </td>
+                <td>10<p>1</p>
+                </td>
+                <td>11<p>2</p>
+                </td>
+                <td>12<p>4</p>
+                </td>
+            </tr>
+            <tr>
+                <td>13<p>2</p>
+                </td>
+                <td>14<p>4</p>
+                </td>
+                <td id="current">15<p>4 items</p>
+                </td>
+                <td>16<p>3</p>
+                </td>
+                <td>17<p>1</p>
+                </td>
+                <td>18<p>2</p>
+                </td>
+                <td>19<p>4</p>
+                </td>
+            </tr>
+            <tr>
+                <td>20<p>2</p>
+                </td>
+                <td>21<p>4</p>
+                </td>
+                <td>22<p>2</p>
+                </td>
+                <td>23<p>3</p>
+                </td>
+                <td>24<p>1</p>
+                </td>
+                <td>25<p>2</p>
+                </td>
+                <td>26<p>4</p>
+                </td>
+            </tr>
+            <tr>
+                <td>27<p>2</p>
+                </td>
+                <td>28<p>4</p>
+                </td>
+                <td class="dull">1<p>2</p>
+                </td>
+                <td class="dull">2<p>3</p>
+                </td>
+                <td class="dull">3<p>1</p>
+                </td>
+                <td class="dull">4<p>2</p>
+                </td>
+                <td class="dull">5<p>4</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+</body>
+
+</html>
